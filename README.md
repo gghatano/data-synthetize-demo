@@ -1,19 +1,18 @@
-# データ合成のデモ(CTGAN,GaussianCopula)
+# データ合成のデモ(SDV-CTGAN,GaussianCopula)
 
 ## 概要
 
 このデモアプリは、ユーザーが提供するテーブル形式のデータから、指定されたデータ合成手法を用いて新しい合成データセットを生成します。以下の機能を備えています
 
-- データ合成手法とパラメータの選択(CTGAN or GaussianCopula): CTGAN は深層学習を活用して複雑なデータ分布を学習する手法で、主にカテゴリカルデータに適しています。一方、GaussianCopula はデータの相関構造をモデル化する統計的手法で、数値データの合成に向いています。
+- データ合成手法の選択(CTGAN or GaussianCopula): CTGAN は深層学習を活用して複雑なデータ分布を学習する手法で、主にカテゴリカルデータに適しています。一方、GaussianCopula はデータの相関構造をモデル化する統計的手法で、数値データの合成に向いています。
 - 合成前後データの品質の比較 (列ごとの分布比較と相関係数の比較)
-
 
 
 ## セットアップ手順
 
 ### 必要な環境
 
-- Python 3.11 以上
+- Python 3.11 
 - pip 環境
 
 ### インストール・実行手順
@@ -21,8 +20,8 @@
 1. リポジトリをクローンします。
 
    ```bash
-   git clone https://github.com/ユーザー名/リポジトリ名.git
-   cd リポジトリ名
+   git clone https://github.com/gghatano/data-synthetize-demo.git
+   cd data-synthetize-demo
    ```
 
 2. 必要なライブラリをインストールします。
